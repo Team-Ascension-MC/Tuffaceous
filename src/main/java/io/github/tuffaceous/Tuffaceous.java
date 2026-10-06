@@ -56,6 +56,9 @@ public class Tuffaceous {
             event.accept(TuffaceousBlocks.ABYSMARBLE);
             event.accept(TuffaceousBlocks.FARGNEISS);
         }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(TuffaceousItems.HARD_TACK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -11,7 +11,7 @@ public class TuffaceousItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Tuffaceous.MODID);
 
     public static final DeferredItem<Item> HARD_TACK = ITEMS.register("hard_tack",
-            ()-> new Item(new Item.Properties()));
+            ()-> new Item(new Item.Properties().food(TuffaceousFoodProperties.HARD_TACK)));
 
     public static void register(IEventBus eventBus) {
             ITEMS.register(eventBus);

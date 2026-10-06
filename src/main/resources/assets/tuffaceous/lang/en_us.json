@@ -7,6 +7,8 @@
   "block.tuffaceous.fargneiss": "Fargneiss",
   "block.tuffaceous.polished_rhyolite": "Polished Rhyolite",
   "block.tuffaceous.rhyolite": "Rhyolite",
+
+  "item.tuffaceous.hard_tack": "Hard Tack",
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",
