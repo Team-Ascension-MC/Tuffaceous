@@ -17,11 +17,28 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        tag(BlockTags.BASE_STONE_OVERWORLD)
                 .add(TuffaceousBlocks.ABYSMARBLE.get())
                 .add(TuffaceousBlocks.FARGNEISS.get())
+                .add(TuffaceousBlocks.LIMESTONE.get())
+                .add(TuffaceousBlocks.RHYOLITE.get());
+        tag(BlockTags.DEEPSLATE_ORE_REPLACEABLES)
+                .add(TuffaceousBlocks.FARGNEISS.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(TuffaceousBlocks.ABYSMARBLE.get())
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE.get())
+                .add(TuffaceousBlocks.FARGNEISS.get())
+                .add(TuffaceousBlocks.LIMESTONE.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE.get())
                 .add(TuffaceousBlocks.RHYOLITE.get());
+        tag(BlockTags.SLABS)
+                .add(TuffaceousBlocks.RHYOLITE_SLAB.get());
+        tag(BlockTags.STAIRS)
+                .add(TuffaceousBlocks.RHYOLITE_STAIRS.get());
+        tag(BlockTags.STONE_ORE_REPLACEABLES)
+                .add(TuffaceousBlocks.RHYOLITE.get());
+        tag(BlockTags.WALLS)
+                .add(TuffaceousBlocks.RHYOLITE_WALL.get());
 
     }
 }

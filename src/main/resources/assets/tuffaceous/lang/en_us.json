@@ -4,9 +4,14 @@
   "item.examplemod.example_item": "Example Item",
 
   "block.tuffaceous.abysmarble": "Abysmarble",
+  "block.tuffaceous.cobbled_limestone": "Cobbled Limestone",
   "block.tuffaceous.fargneiss": "Fargneiss",
+  "block.tuffaceous.limestone": "Limestone",
   "block.tuffaceous.polished_rhyolite": "Polished Rhyolite",
   "block.tuffaceous.rhyolite": "Rhyolite",
+  "block.tuffaceous.rhyolite_stairs": "Rhyolite Stairs",
+    "block.tuffaceous.rhyolite_slab": "Rhyolite Slab",
+    "block.tuffaceous.rhyolite_wall": "Rhyolite Wall",
 
   "item.tuffaceous.hard_tack": "Hard Tack",
   "examplemod.configuration.title": "Example Mod Configs",
