@@ -23,10 +23,13 @@ public class TuffaceousBlockstateProvider extends BlockStateProvider {
         blockWithItem(TuffaceousBlocks.RHYOLITE);
 
         stairsBlock(TuffaceousBlocks.RHYOLITE_STAIRS.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
+        stairsBlock(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()));
         slabBlock(TuffaceousBlocks.RHYOLITE_SLAB.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
+        slabBlock(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()));
         wallBlock(TuffaceousBlocks.RHYOLITE_WALL.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
 
-
+        blockItem(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB);
+        blockItem(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS);
         blockItem(TuffaceousBlocks.RHYOLITE_SLAB);
         blockItem(TuffaceousBlocks.RHYOLITE_STAIRS);
     }

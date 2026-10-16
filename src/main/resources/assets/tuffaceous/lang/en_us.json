@@ -8,8 +8,10 @@
   "block.tuffaceous.fargneiss": "Fargneiss",
   "block.tuffaceous.limestone": "Limestone",
   "block.tuffaceous.polished_rhyolite": "Polished Rhyolite",
+    "block.tuffaceous.polished_rhyolite_stairs": "Polished Rhyolite Stairs",
+    "block,tuffaceous.polished_rhyolite_slab": "Polished Rhyolite Slab",
   "block.tuffaceous.rhyolite": "Rhyolite",
-  "block.tuffaceous.rhyolite_stairs": "Rhyolite Stairs",
+    "block.tuffaceous.rhyolite_stairs": "Rhyolite Stairs",
     "block.tuffaceous.rhyolite_slab": "Rhyolite Slab",
     "block.tuffaceous.rhyolite_wall": "Rhyolite Wall",
 

@@ -56,6 +56,8 @@ public class Tuffaceous {
             event.accept(TuffaceousBlocks.RHYOLITE_SLAB);
             event.accept(TuffaceousBlocks.RHYOLITE_WALL);
             event.accept(TuffaceousBlocks.POLISHED_RHYOLITE);
+            event.accept(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS);
+            event.accept(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB);
             event.accept(TuffaceousBlocks.LIMESTONE);
             event.accept(TuffaceousBlocks.COBBLED_LIMESTONE);
             event.accept(TuffaceousBlocks.ABYSMARBLE);

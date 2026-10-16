@@ -46,6 +46,12 @@ public class TuffaceousBlocks {
                     .sound(SoundType.STONE)
                     .strength(1.5f)
             ));
+    public static final DeferredBlock<StairBlock> POLISHED_RHYOLITE_STAIRS = registerBlock("polished_rhyolite_stairs",
+            () -> new StairBlock(TuffaceousBlocks.POLISHED_RHYOLITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.STONE).strength(1.5f)));
+    public static final DeferredBlock<SlabBlock> POLISHED_RHYOLITE_SLAB = registerBlock("polished_rhyolite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.STONE).strength(1.5f)));
+
     public static final DeferredBlock<Block> RHYOLITE = registerBlock("rhyolite",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()

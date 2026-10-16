@@ -30,10 +30,17 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
                 .add(TuffaceousBlocks.FARGNEISS.get())
                 .add(TuffaceousBlocks.LIMESTONE.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE.get())
-                .add(TuffaceousBlocks.RHYOLITE.get());
+                .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
+                .add(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get())
+                .add(TuffaceousBlocks.RHYOLITE.get())
+                .add(TuffaceousBlocks.RHYOLITE_SLAB.get())
+                .add(TuffaceousBlocks.RHYOLITE_STAIRS.get())
+                .add(TuffaceousBlocks.RHYOLITE_WALL.get());
         tag(BlockTags.SLABS)
+                .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
                 .add(TuffaceousBlocks.RHYOLITE_SLAB.get());
         tag(BlockTags.STAIRS)
+                .add(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get())
                 .add(TuffaceousBlocks.RHYOLITE_STAIRS.get());
         tag(BlockTags.STONE_ORE_REPLACEABLES)
                 .add(TuffaceousBlocks.RHYOLITE.get());

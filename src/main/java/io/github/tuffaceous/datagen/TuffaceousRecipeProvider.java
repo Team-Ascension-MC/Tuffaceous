@@ -23,14 +23,18 @@ public class TuffaceousRecipeProvider extends RecipeProvider implements IConditi
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput){
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE.get(), 4)
                 .pattern("XX")
                 .pattern("XX")
                 .define('X', TuffaceousBlocks.RHYOLITE.get())
                 .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
+        stairBuilder(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.POLISHED_RHYOLITE)).group("polished_rhyolite")
+                        .unlockedBy("has_polished_rhyolite", has(TuffaceousBlocks.POLISHED_RHYOLITE)).save(recipeOutput);
         stairBuilder(TuffaceousBlocks.RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.RHYOLITE)).group("rhyolite")
                         .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(), TuffaceousBlocks.POLISHED_RHYOLITE.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.RHYOLITE_SLAB.get(), TuffaceousBlocks.RHYOLITE.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.RHYOLITE_WALL.get(), TuffaceousBlocks.RHYOLITE.get());
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, TuffaceousItems.HARD_TACK.get(), 16)
                 .pattern("WWW")
                 .pattern("WBW")
