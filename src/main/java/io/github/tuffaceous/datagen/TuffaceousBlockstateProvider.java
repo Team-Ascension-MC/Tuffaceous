@@ -19,6 +19,7 @@ public class TuffaceousBlockstateProvider extends BlockStateProvider {
         blockWithItem(TuffaceousBlocks.COBBLED_LIMESTONE);
         blockWithItem(TuffaceousBlocks.FARGNEISS);
         blockWithItem(TuffaceousBlocks.LIMESTONE);
+        blockWithItem(TuffaceousBlocks.POLISHED_FARGNEISS);
         blockWithItem(TuffaceousBlocks.POLISHED_RHYOLITE);
         blockWithItem(TuffaceousBlocks.RHYOLITE);
 

@@ -29,6 +29,7 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
                 .add(TuffaceousBlocks.COBBLED_LIMESTONE.get())
                 .add(TuffaceousBlocks.FARGNEISS.get())
                 .add(TuffaceousBlocks.LIMESTONE.get())
+                .add(TuffaceousBlocks.POLISHED_FARGNEISS.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get())

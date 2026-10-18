@@ -40,6 +40,12 @@ public class TuffaceousBlocks {
                     .sound(SoundType.DRIPSTONE_BLOCK)
                     .strength(1.5f)
             ));
+    public static final DeferredBlock<Block> POLISHED_FARGNEISS = registerBlock("polished_fargneiss",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.POLISHED_DEEPSLATE)
+                    .strength(3.5f)
+            ));
     public static final DeferredBlock<Block> POLISHED_RHYOLITE = registerBlock("polished_rhyolite",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()

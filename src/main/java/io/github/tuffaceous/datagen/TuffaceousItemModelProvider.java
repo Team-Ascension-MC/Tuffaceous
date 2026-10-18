@@ -22,6 +22,7 @@ public class TuffaceousItemModelProvider extends ItemModelProvider {
         simpleBlockItem(TuffaceousBlocks.COBBLED_LIMESTONE.get());
         simpleBlockItem(TuffaceousBlocks.FARGNEISS.get());
         simpleBlockItem(TuffaceousBlocks.LIMESTONE.get());
+        simpleBlockItem(TuffaceousBlocks.POLISHED_FARGNEISS.get());
         simpleBlockItem(TuffaceousBlocks.POLISHED_RHYOLITE.get());
         simpleBlockItem(TuffaceousBlocks.RHYOLITE.get());
             wallItem(TuffaceousBlocks.RHYOLITE_WALL, TuffaceousBlocks.RHYOLITE);

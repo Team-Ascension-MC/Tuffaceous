@@ -22,6 +22,11 @@ public class TuffaceousRecipeProvider extends RecipeProvider implements IConditi
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput){
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_FARGNEISS.get(), 4)
+                .pattern("FF")
+                .pattern("FF")
+                .define('F', TuffaceousBlocks.FARGNEISS.get())
+                .unlockedBy("has_fargneiss", has(TuffaceousBlocks.FARGNEISS)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE.get(), 4)
                 .pattern("XX")

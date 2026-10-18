@@ -62,6 +62,7 @@ public class Tuffaceous {
             event.accept(TuffaceousBlocks.COBBLED_LIMESTONE);
             event.accept(TuffaceousBlocks.ABYSMARBLE);
             event.accept(TuffaceousBlocks.FARGNEISS);
+            event.accept(TuffaceousBlocks.POLISHED_FARGNEISS);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(TuffaceousItems.HARD_TACK);
