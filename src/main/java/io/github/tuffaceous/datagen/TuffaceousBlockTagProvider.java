@@ -27,8 +27,13 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(TuffaceousBlocks.ABYSMARBLE.get())
                 .add(TuffaceousBlocks.COBBLED_LIMESTONE.get())
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get())
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get())
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get())
                 .add(TuffaceousBlocks.FARGNEISS.get())
                 .add(TuffaceousBlocks.LIMESTONE.get())
+                .add(TuffaceousBlocks.LIMESTONE_SLAB.get())
+                .add(TuffaceousBlocks.LIMESTONE_STAIRS.get())
                 .add(TuffaceousBlocks.POLISHED_FARGNEISS.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
@@ -38,14 +43,19 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
                 .add(TuffaceousBlocks.RHYOLITE_STAIRS.get())
                 .add(TuffaceousBlocks.RHYOLITE_WALL.get());
         tag(BlockTags.SLABS)
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get())
+                .add(TuffaceousBlocks.LIMESTONE_SLAB.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
                 .add(TuffaceousBlocks.RHYOLITE_SLAB.get());
         tag(BlockTags.STAIRS)
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get())
+                .add(TuffaceousBlocks.LIMESTONE_STAIRS.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get())
                 .add(TuffaceousBlocks.RHYOLITE_STAIRS.get());
         tag(BlockTags.STONE_ORE_REPLACEABLES)
                 .add(TuffaceousBlocks.RHYOLITE.get());
         tag(BlockTags.WALLS)
+                .add(TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get())
                 .add(TuffaceousBlocks.RHYOLITE_WALL.get());
 
     }

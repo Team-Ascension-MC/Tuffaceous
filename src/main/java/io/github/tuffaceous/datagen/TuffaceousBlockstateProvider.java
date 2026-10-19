@@ -23,12 +23,21 @@ public class TuffaceousBlockstateProvider extends BlockStateProvider {
         blockWithItem(TuffaceousBlocks.POLISHED_RHYOLITE);
         blockWithItem(TuffaceousBlocks.RHYOLITE);
 
+        stairsBlock(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get(), blockTexture(TuffaceousBlocks.COBBLED_LIMESTONE.get()));
+        stairsBlock(TuffaceousBlocks.LIMESTONE_STAIRS.get(), blockTexture(TuffaceousBlocks.LIMESTONE.get()));
         stairsBlock(TuffaceousBlocks.RHYOLITE_STAIRS.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
         stairsBlock(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()));
+        slabBlock(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get(), blockTexture(TuffaceousBlocks.COBBLED_LIMESTONE.get()), blockTexture(TuffaceousBlocks.COBBLED_LIMESTONE.get()));
+        slabBlock(TuffaceousBlocks.LIMESTONE_SLAB.get(), blockTexture(TuffaceousBlocks.LIMESTONE.get()), blockTexture(TuffaceousBlocks.LIMESTONE.get()));
         slabBlock(TuffaceousBlocks.RHYOLITE_SLAB.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
         slabBlock(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()), blockTexture(TuffaceousBlocks.POLISHED_RHYOLITE.get()));
+        wallBlock(TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get(), blockTexture(TuffaceousBlocks.COBBLED_LIMESTONE.get()));
         wallBlock(TuffaceousBlocks.RHYOLITE_WALL.get(), blockTexture(TuffaceousBlocks.RHYOLITE.get()));
 
+        blockItem(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB);
+        blockItem(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS);
+        blockItem(TuffaceousBlocks.LIMESTONE_SLAB);
+        blockItem(TuffaceousBlocks.LIMESTONE_STAIRS);
         blockItem(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB);
         blockItem(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS);
         blockItem(TuffaceousBlocks.RHYOLITE_SLAB);

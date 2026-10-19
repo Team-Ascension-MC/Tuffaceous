@@ -17,13 +17,21 @@ public class TuffaceousBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(TuffaceousBlocks.ABYSMARBLE.get());
+
         dropSelf(TuffaceousBlocks.COBBLED_LIMESTONE.get());
+            dropSelf(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get());
+            add(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get(),
+                block -> createSlabItemTable(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get()));
+            dropSelf(TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get());
+
         dropSelf(TuffaceousBlocks.FARGNEISS.get());
         dropSelf(TuffaceousBlocks.POLISHED_FARGNEISS.get());
+
         dropSelf(TuffaceousBlocks.POLISHED_RHYOLITE.get());
             add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(),
                     block -> createSlabItemTable(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get()));
             dropSelf(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get());
+
         dropSelf(TuffaceousBlocks.RHYOLITE.get());
             dropSelf(TuffaceousBlocks.RHYOLITE_STAIRS.get());
             add(TuffaceousBlocks.RHYOLITE_SLAB.get(),
@@ -32,6 +40,10 @@ public class TuffaceousBlockLootTableProvider extends BlockLootSubProvider {
 
         dropOther(TuffaceousBlocks.LIMESTONE.get(),
                 TuffaceousBlocks.COBBLED_LIMESTONE.get());
+            add(TuffaceousBlocks.LIMESTONE_SLAB.get(),
+                block -> createSlabItemTable(TuffaceousBlocks.LIMESTONE_SLAB.get()));
+            dropSelf(TuffaceousBlocks.LIMESTONE_STAIRS.get());
+
         // dropSelf(TuffaceousBlocks.EXAMPLE_BLOCK.get());
         // dropOther(TuffaceousBlocks.SOURCE_BLOCK.get(),
         //      Class.RESULT_ITEM.get());

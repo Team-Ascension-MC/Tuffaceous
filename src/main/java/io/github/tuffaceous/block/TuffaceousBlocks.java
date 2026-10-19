@@ -28,6 +28,14 @@ public class TuffaceousBlocks {
                     .sound(SoundType.DRIPSTONE_BLOCK)
                     .strength(2f)
             ));
+    public static final DeferredBlock<StairBlock> COBBLED_LIMESTONE_STAIRS = registerBlock("cobbled_limestone_stairs",
+            () -> new StairBlock(TuffaceousBlocks.COBBLED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK).strength(2f)));
+    public static final DeferredBlock<SlabBlock> COBBLED_LIMESTONE_SLAB = registerBlock("cobbled_limestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK).strength(2f)));
+    public static final DeferredBlock<WallBlock> COBBLED_LIMESTONE_WALL = registerBlock("cobbled_limestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK).strength(2f)));
+
     public static final DeferredBlock<Block> FARGNEISS = registerBlock("fargneiss",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
@@ -40,6 +48,13 @@ public class TuffaceousBlocks {
                     .sound(SoundType.DRIPSTONE_BLOCK)
                     .strength(1.5f)
             ));
+    public static final DeferredBlock<StairBlock> LIMESTONE_STAIRS = registerBlock("limestone_stairs",
+            () -> new StairBlock(TuffaceousBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK).strength(1.5f)));
+    public static final DeferredBlock<SlabBlock> LIMESTONE_SLAB = registerBlock("limestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.STONE).strength(1.5f)));
+
+
     public static final DeferredBlock<Block> POLISHED_FARGNEISS = registerBlock("polished_fargneiss",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()

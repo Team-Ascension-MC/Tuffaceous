@@ -59,6 +59,8 @@ public class Tuffaceous {
             event.accept(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS);
             event.accept(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB);
             event.accept(TuffaceousBlocks.LIMESTONE);
+            event.accept(TuffaceousBlocks.LIMESTONE_STAIRS);
+            event.accept(TuffaceousBlocks.LIMESTONE_SLAB);
             event.accept(TuffaceousBlocks.COBBLED_LIMESTONE);
             event.accept(TuffaceousBlocks.ABYSMARBLE);
             event.accept(TuffaceousBlocks.FARGNEISS);
@@ -74,3 +76,4 @@ public class Tuffaceous {
     public void onServerStarting(ServerStartingEvent event) {
     }
 }
+//Cam was here :P

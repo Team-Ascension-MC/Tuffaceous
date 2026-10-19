@@ -5,18 +5,27 @@
 
   "block.tuffaceous.abysmarble": "Abysmarble",
   "block.tuffaceous.cobbled_limestone": "Cobbled Limestone",
+    "block.tuffaceous.cobbled_limestone_stairs": "Cobbled Limestone Stairs",
+    "block.tuffaceous.cobbled_limestone_slab": "Cobbled Limestone Slab",
+    "block.tuffaceous.cobbled_limestone_wall": "Cobbled Limestone Wall",
+
   "block.tuffaceous.fargneiss": "Fargneiss",
   "block.tuffaceous.limestone": "Limestone",
+    "block.tuffaceous.limestone_stairs": "Limestone Stairs",
+    "block.tuffaceous.limestone_slab": "Limestone Slab",
+
   "block.tuffaceous.polished_fargneiss":"Polished Fargneiss",
   "block.tuffaceous.polished_rhyolite": "Polished Rhyolite",
     "block.tuffaceous.polished_rhyolite_stairs": "Polished Rhyolite Stairs",
-    "block,tuffaceous.polished_rhyolite_slab": "Polished Rhyolite Slab",
+    "block.tuffaceous.polished_rhyolite_slab": "Polished Rhyolite Slab",
+
   "block.tuffaceous.rhyolite": "Rhyolite",
     "block.tuffaceous.rhyolite_stairs": "Rhyolite Stairs",
     "block.tuffaceous.rhyolite_slab": "Rhyolite Slab",
     "block.tuffaceous.rhyolite_wall": "Rhyolite Wall",
 
   "item.tuffaceous.hard_tack": "Hard Tack",
+
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",

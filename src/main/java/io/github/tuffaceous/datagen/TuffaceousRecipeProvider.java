@@ -33,12 +33,19 @@ public class TuffaceousRecipeProvider extends RecipeProvider implements IConditi
                 .pattern("XX")
                 .define('X', TuffaceousBlocks.RHYOLITE.get())
                 .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
-        stairBuilder(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.POLISHED_RHYOLITE)).group("polished_rhyolite")
-                        .unlockedBy("has_polished_rhyolite", has(TuffaceousBlocks.POLISHED_RHYOLITE)).save(recipeOutput);
+        stairBuilder(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.COBBLED_LIMESTONE)).group("limestone")
+                        .unlockedBy("has_cobbled_limestone", has(TuffaceousBlocks.COBBLED_LIMESTONE)).save(recipeOutput);
+        stairBuilder(TuffaceousBlocks.LIMESTONE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.LIMESTONE)).group("limestone")
+                        .unlockedBy("has_limestone", has(TuffaceousBlocks.LIMESTONE)).save(recipeOutput);
+        stairBuilder(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.POLISHED_RHYOLITE)).group("rhyolite")
+                        .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
         stairBuilder(TuffaceousBlocks.RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.RHYOLITE)).group("rhyolite")
                         .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get(), TuffaceousBlocks.COBBLED_LIMESTONE.get());
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.LIMESTONE_SLAB.get(), TuffaceousBlocks.LIMESTONE.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(), TuffaceousBlocks.POLISHED_RHYOLITE.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.RHYOLITE_SLAB.get(), TuffaceousBlocks.RHYOLITE.get());
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get(), TuffaceousBlocks.COBBLED_LIMESTONE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.RHYOLITE_WALL.get(), TuffaceousBlocks.RHYOLITE.get());
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, TuffaceousItems.HARD_TACK.get(), 16)
                 .pattern("WWW")

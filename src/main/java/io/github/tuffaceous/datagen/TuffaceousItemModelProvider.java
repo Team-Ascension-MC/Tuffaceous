@@ -20,6 +20,7 @@ public class TuffaceousItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleBlockItem(TuffaceousBlocks.ABYSMARBLE.get());
         simpleBlockItem(TuffaceousBlocks.COBBLED_LIMESTONE.get());
+            wallItem(TuffaceousBlocks.COBBLED_LIMESTONE_WALL, TuffaceousBlocks.COBBLED_LIMESTONE);
         simpleBlockItem(TuffaceousBlocks.FARGNEISS.get());
         simpleBlockItem(TuffaceousBlocks.LIMESTONE.get());
         simpleBlockItem(TuffaceousBlocks.POLISHED_FARGNEISS.get());
