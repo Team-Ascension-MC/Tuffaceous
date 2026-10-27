@@ -1,6 +1,7 @@
 package io.github.tuffaceous;
 
 import io.github.tuffaceous.block.TuffaceousBlocks;
+import io.github.tuffaceous.effect.TuffaceousEffects;
 import io.github.tuffaceous.items.TuffaceousItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,8 @@ public class Tuffaceous {
         TuffaceousItems.register(modEventBus);
         TuffaceousBlocks.register(modEventBus);
 
+        TuffaceousEffects.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -62,9 +65,14 @@ public class Tuffaceous {
             event.accept(TuffaceousBlocks.LIMESTONE_STAIRS);
             event.accept(TuffaceousBlocks.LIMESTONE_SLAB);
             event.accept(TuffaceousBlocks.COBBLED_LIMESTONE);
+            event.accept(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS);
+            event.accept(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB);
+            event.accept(TuffaceousBlocks.COBBLED_LIMESTONE_WALL);
             event.accept(TuffaceousBlocks.ABYSMARBLE);
             event.accept(TuffaceousBlocks.FARGNEISS);
             event.accept(TuffaceousBlocks.POLISHED_FARGNEISS);
+            event.accept(TuffaceousBlocks.POLISHED_FARGNEISS_STAIRS);
+            event.accept(TuffaceousBlocks.POLISHED_FARGNEISS_SLAB);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(TuffaceousItems.HARD_TACK);

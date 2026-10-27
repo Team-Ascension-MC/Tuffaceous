@@ -37,12 +37,16 @@ public class TuffaceousRecipeProvider extends RecipeProvider implements IConditi
                         .unlockedBy("has_cobbled_limestone", has(TuffaceousBlocks.COBBLED_LIMESTONE)).save(recipeOutput);
         stairBuilder(TuffaceousBlocks.LIMESTONE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.LIMESTONE)).group("limestone")
                         .unlockedBy("has_limestone", has(TuffaceousBlocks.LIMESTONE)).save(recipeOutput);
+        stairBuilder(TuffaceousBlocks.POLISHED_FARGNEISS_STAIRS.get(), Ingredient.of(TuffaceousBlocks.POLISHED_FARGNEISS)).group("fargneiss")
+                        .unlockedBy("has_fargneiss", has(TuffaceousBlocks.FARGNEISS)).save(recipeOutput);
         stairBuilder(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.POLISHED_RHYOLITE)).group("rhyolite")
                         .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
         stairBuilder(TuffaceousBlocks.RHYOLITE_STAIRS.get(), Ingredient.of(TuffaceousBlocks.RHYOLITE)).group("rhyolite")
                         .unlockedBy("has_rhyolite", has(TuffaceousBlocks.RHYOLITE)).save(recipeOutput);
+
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get(), TuffaceousBlocks.COBBLED_LIMESTONE.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.LIMESTONE_SLAB.get(), TuffaceousBlocks.LIMESTONE.get());
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_FARGNEISS_SLAB.get(), TuffaceousBlocks.POLISHED_FARGNEISS.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(), TuffaceousBlocks.POLISHED_RHYOLITE.get());
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.RHYOLITE_SLAB.get(), TuffaceousBlocks.RHYOLITE.get());
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get(), TuffaceousBlocks.COBBLED_LIMESTONE.get());

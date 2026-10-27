@@ -1,5 +1,6 @@
 package io.github.tuffaceous.block;
 
+import com.mojang.serialization.MapCodec;
 import io.github.tuffaceous.Tuffaceous;
 import io.github.tuffaceous.items.TuffaceousItems;
 import net.minecraft.world.item.BlockItem;
@@ -61,6 +62,12 @@ public class TuffaceousBlocks {
                     .sound(SoundType.POLISHED_DEEPSLATE)
                     .strength(3.5f)
             ));
+    public static final DeferredBlock<StairBlock> POLISHED_FARGNEISS_STAIRS = registerBlock("polished_fargneiss_stairs",
+            () -> new StairBlock(TuffaceousBlocks.POLISHED_FARGNEISS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE).strength(3.5f)));
+    public static final DeferredBlock<SlabBlock> POLISHED_FARGNEISS_SLAB = registerBlock("polished_fargneiss_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.POLISHED_DEEPSLATE).strength(3.5f)));
+
     public static final DeferredBlock<Block> POLISHED_RHYOLITE = registerBlock("polished_rhyolite",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
@@ -86,6 +93,14 @@ public class TuffaceousBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.STONE).strength(1.5f)));
     public static final DeferredBlock<WallBlock> RHYOLITE_WALL = registerBlock("rhyolite_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().sound(SoundType.STONE).strength(1.5f)));
+
+    public static final DeferredBlock<BushBlock> ROCKWEED = registerBlock("rockweed",
+            () -> new BushBlock(BlockBehaviour.Properties.of().sound(SoundType.FROGSPAWN)) {
+                @Override
+                protected MapCodec<? extends BushBlock> codec() {
+                    return null;
+                }
+            });
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toreturn = BLOCKS.register(name, block);

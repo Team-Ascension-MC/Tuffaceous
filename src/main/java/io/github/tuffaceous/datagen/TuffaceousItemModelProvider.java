@@ -28,6 +28,7 @@ public class TuffaceousItemModelProvider extends ItemModelProvider {
         simpleBlockItem(TuffaceousBlocks.RHYOLITE.get());
             wallItem(TuffaceousBlocks.RHYOLITE_WALL, TuffaceousBlocks.RHYOLITE);
 
+
         basicItem(TuffaceousItems.HARD_TACK.get());
         //basicItem(TuffaceousItems.MAGIC_ITEM.get());
     }

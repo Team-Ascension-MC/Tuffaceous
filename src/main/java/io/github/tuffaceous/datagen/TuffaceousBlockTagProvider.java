@@ -45,11 +45,13 @@ public class TuffaceousBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.SLABS)
                 .add(TuffaceousBlocks.COBBLED_LIMESTONE_SLAB.get())
                 .add(TuffaceousBlocks.LIMESTONE_SLAB.get())
+                .add(TuffaceousBlocks.POLISHED_FARGNEISS_SLAB.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get())
                 .add(TuffaceousBlocks.RHYOLITE_SLAB.get());
         tag(BlockTags.STAIRS)
                 .add(TuffaceousBlocks.COBBLED_LIMESTONE_STAIRS.get())
                 .add(TuffaceousBlocks.LIMESTONE_STAIRS.get())
+                .add(TuffaceousBlocks.POLISHED_FARGNEISS_STAIRS.get())
                 .add(TuffaceousBlocks.POLISHED_RHYOLITE_STAIRS.get())
                 .add(TuffaceousBlocks.RHYOLITE_STAIRS.get());
         tag(BlockTags.STONE_ORE_REPLACEABLES)

@@ -25,7 +25,11 @@ public class TuffaceousBlockLootTableProvider extends BlockLootSubProvider {
             dropSelf(TuffaceousBlocks.COBBLED_LIMESTONE_WALL.get());
 
         dropSelf(TuffaceousBlocks.FARGNEISS.get());
+
         dropSelf(TuffaceousBlocks.POLISHED_FARGNEISS.get());
+            add(TuffaceousBlocks.POLISHED_FARGNEISS_SLAB.get(),
+                    block -> createSlabItemTable(TuffaceousBlocks.POLISHED_FARGNEISS_SLAB.get()));
+            dropSelf(TuffaceousBlocks.POLISHED_FARGNEISS_STAIRS.get());
 
         dropSelf(TuffaceousBlocks.POLISHED_RHYOLITE.get());
             add(TuffaceousBlocks.POLISHED_RHYOLITE_SLAB.get(),
@@ -37,6 +41,8 @@ public class TuffaceousBlockLootTableProvider extends BlockLootSubProvider {
             add(TuffaceousBlocks.RHYOLITE_SLAB.get(),
                     block -> createSlabItemTable(TuffaceousBlocks.RHYOLITE_SLAB.get()));
             dropSelf(TuffaceousBlocks.RHYOLITE_WALL.get());
+
+        dropSelf(TuffaceousBlocks.ROCKWEED.get());
 
         dropOther(TuffaceousBlocks.LIMESTONE.get(),
                 TuffaceousBlocks.COBBLED_LIMESTONE.get());

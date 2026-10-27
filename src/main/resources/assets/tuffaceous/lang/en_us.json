@@ -15,6 +15,9 @@
     "block.tuffaceous.limestone_slab": "Limestone Slab",
 
   "block.tuffaceous.polished_fargneiss":"Polished Fargneiss",
+    "block.tuffaceous.polished_fargneiss_stairs": "Polished Fargneiss Stairs",
+    "block.tuffaceous.polished_fargneiss_slab": "Polished Fargneiss Slab",
+
   "block.tuffaceous.polished_rhyolite": "Polished Rhyolite",
     "block.tuffaceous.polished_rhyolite_stairs": "Polished Rhyolite Stairs",
     "block.tuffaceous.polished_rhyolite_slab": "Polished Rhyolite Slab",
@@ -25,6 +28,8 @@
     "block.tuffaceous.rhyolite_wall": "Rhyolite Wall",
 
   "item.tuffaceous.hard_tack": "Hard Tack",
+
+  "effect.tuffaceous.sluggish": "Sluggish",
 
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
